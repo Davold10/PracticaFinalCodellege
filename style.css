@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 section {
@@ -12,23 +18,34 @@ section {
     background-image: url(./Imagenes/GroupPhoto.jpeg);
     background-size: 100% 100%;
     display: flex;
+    justify-content: center;
 }
 
 .navbar {
     display: flex;
-    width: 80%;
+    width: 85%;
     height: 10vh;
     align-items: center;
+    position: absolute;
+    top: 5%;
 }
 
 .navbar ul {
     display: flex;
+    width: 100%;
+    padding: 2%;
+}
+
+.navbar ul>a {
+    text-decoration: none;
+    margin-left: 2%;
 }
 
 .navbar ul il {
     list-style: none;
     position: relative;
-    margin-left: 15%;
+    color: white;
+    font-size: 20px;
 }
 
 .navbar img {
@@ -37,19 +54,55 @@ section {
     filter: none;
 }
 
-.iconos {
-    width: 10%;
+.navbar .iconos {
+    width: 20%;
     height: 10vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    color: white;
+    font-size: 20px;
+    z-index: 2;
 }
 
-.boton {
-    width: 10%;
-    height: 10vh;
+.navbar .boton {
+    width: 150px;
+    height: 40px;
     display: flex;
-    background: rgb(38, 255, 0);
-    border-top-left-radius: 25%;
-    border-bottom-right-radius: 25%;
+    align-items: center;
+    justify-content: center;
+    background: rgb(34, 255, 0);
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    color: white;
+}
+
+.iconos ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+.iconos ul li {
+    list-style: none;
+}
+
+.iconos ul li:hover ul {
+    display: block;
+}
+
+.iconos ul li ul {
+    position: absolute;
+    width: 100px;
+    display: none;
+}
+
+.iconos ul li ul li {
+    background: white;
+    color: black;
+    display: block;
+}
+
+.iconos ul li ul li:hover {
+    background: grey;
 }
