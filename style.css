@@ -417,7 +417,7 @@ nav ul li a {
 }
 
 #aliados {
-    width: 1349px;
+    width: 100vw;
     height: 1080px;
     background: url(./Imagenes/aliadosimg.jpeg);
     background-size: 100% 100%;
@@ -844,7 +844,68 @@ nav ul li a {
     background: url(./Imagenes/colaborar_mentoreo.svg);
     background-size: 100% 100%;
 }
+/* Footer */
+footer {
+    width: 100%;
+    height: 100vh;
+    background: url(./Imagenes/imgFooter.jpeg);
+    background-size: 100% 100%;
+    position: relative;
+}
 
+footer .fa {
+    bottom: 3%;
+    right: 3%;
+    color: white;
+    font-size: 50px;
+    position: absolute;
+}
+
+footer img {
+    bottom: 3%;
+    left: 3%;
+    position: absolute;
+    width: 200px;
+    height: 100px;
+}
+
+footer .footerCont {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.footerCont b {
+    position: absolute;
+    top: 42%;
+    left: 43%;
+    font-size: 30px;
+    text-align: center;
+}
+
+.footerCont span {
+    position: absolute;
+    top: 48%;
+    left: 45%;
+    font-size: 30px;
+    text-align: center;
+}
+
+.footerCont .footerBtn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 10vh;
+    top: 57%;
+    left: 35%;
+    font-size: 35px;
+    border-radius: 90px 0 90px 0;
+    color: rgb(32, 81, 245);
+    background: white;
+    text-align: center;
+}
 
 /* Animations */
 
