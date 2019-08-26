@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
 /* Global Rules */
+
 * {
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
@@ -11,15 +13,14 @@ ul {
     margin: 0;
     padding: 0;
     list-style: none;
+    overflow-x: hidden;
 }
 
 h2 {
     margin: 0;
-
     /* text-align: center; */
     font-weight: normal;
     font-size: 50px;
-
     color: #0264FB;
 }
 
@@ -41,32 +42,35 @@ section {
     background: #2DE114;
     padding: 10px 30px;
 }
-.cod-team-alt{
+
+.cod-team-alt {
     display: block;
     background: url(Imagenes/Woman.jpeg);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position:  center;
+    background-position: center;
     height: 60px;
     width: 60px;
     border-radius: 50%;
 }
-.cod-team{
+
+.cod-team {
     display: block;
     background: url(Imagenes/Man.jpeg);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position:  center;
+    background-position: center;
     height: 60px;
     width: 60px;
     border-radius: 50%;
 }
 
+
 /* Grid System*/
+
 .cod-container {
     width: 1000px;
     text-align: center;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,24 +92,21 @@ section {
     width: 50%;
     display: flex;
     justify-content: center;
-
 }
 
 
 /* Navbar Rules */
+
 nav {
     z-index: 1020;
     position: fixed;
     box-sizing: border-box;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     top: 0;
     height: 40px;
     width: 100%;
-
     padding: 50px 120px;
     color: white;
     background: #1568ED;
@@ -114,7 +115,6 @@ nav {
 .nav-brand {
     height: 40px;
     width: 169px;
-
     background-image: url(/Imagenes/codellege-logo-green.svg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -130,16 +130,20 @@ nav ul li {
     display: flex;
     align-items: center;
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
     color: white;
 }
+
+
 /* Header Rules */
+
 .cod-bg-blue {
     background: url(/Imagenes/haeder_home_desktop.png);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     align-items: flex-end;
@@ -147,7 +151,7 @@ nav ul li a{
 }
 
 .cod-bg-blue h1 {
-    margin: 200px 100px;
+    margin-left: 5%;
     font-size: 80px;
     font-weight: normal;
 }
@@ -164,7 +168,9 @@ nav ul li a{
     animation: textAnimation 7s infinite linear 0s;
 }
 
+
 /* Main Section */
+
 .codellege-main {
     width: 100vw;
     display: flex;
@@ -172,9 +178,7 @@ nav ul li a{
 }
 
 .cod-brand-logo {
-
     height: 200px;
-
     background: url(Imagenes/ColorBrand.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -184,11 +188,11 @@ nav ul li a{
 .cod-porpouse {
     position: relative;
     height: 500px;
-
     display: flex;
     flex-direction: column;
     overflow-y: hidden;
 }
+
 .cod-porpouse::before {
     z-index: 2;
     height: 500px;
@@ -202,208 +206,214 @@ nav ul li a{
 .cod-pronunciation {
     position: relative;
     height: 500px;
-
     display: flex;
     flex-direction: column;
     overflow-y: hidden;
 }
+
 .cod-pronunciation::before {
     z-index: 2;
     position: relative;
     height: 500px;
     content: '';
-
     background: url(Imagenes/Pronunciation.svg);
     background-repeat: no-repeat;
     background-size: 63%;
     background-position: center 0;
-
 }
 
-.cod-porpouse .cod-node-header{
+.cod-porpouse .cod-node-header {
     z-index: 2;
     position: absolute;
     bottom: 317px;
     right: 81px;
-
     width: 199px;
     height: 62px;
     padding: 0 40px;
-
     border-radius: 60px 40px 40px 0;
     box-shadow: 0 0 20px 1px #00000013;
-
     display: flex;
     justify-content: left;
     align-items: center;
 }
-.cod-porpouse .cod-node-text{
+
+.cod-porpouse .cod-node-text {
     position: absolute;
     z-index: 1;
-
     bottom: 98px;
     right: 81px;
-
     width: 199px;
     height: 200px;
     padding: 0 40px;
     padding-top: 80px;
-
     border-radius: 60px 40px 40px 0;
-
     background: #0264FB;
     color: white;
     box-shadow: 0 0 20px 1px #00000013;
-
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.cod-pronunciation .cod-node-header{
-    
+
+.cod-pronunciation .cod-node-header {
     z-index: 2;
     position: absolute;
     bottom: 313px;
     left: 217px;
-
     width: 220px;
     height: 66px;
     padding: 0 40px;
-
     border-radius: 40px 60px 0 40px;
     box-shadow: 0 0 20px 1px #00000013;
-
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
-.cod-pronunciation .cod-node-text{
+
+.cod-pronunciation .cod-node-text {
     position: absolute;
     z-index: 1;
-
     bottom: 98px;
     right: 203px;
-
     width: 220px;
     height: 200px;
     padding: 0 40px;
     padding-top: 80px;
-
     border-radius: 40px 60px 0 40px;
-
     background: #0264FB;
     color: white;
     box-shadow: 0 0 20px 1px #00000013;
-
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.cod-node-text h3{
+
+.cod-node-text h3 {
     font-size: 22px;
     font-weight: 600
 }
-.cod-node-text p{
+
+.cod-node-text p {
     font-size: 18px;
     font-weight: 400;
 }
-.cod-node-text p span{
+
+.cod-node-text p span {
     font-size: 25px;
     line-height: 60px;
     font-weight: 600;
 }
+
+
 /* Teams Grid */
-.cod-slider-wrapper{
+
+.cod-slider-wrapper {
     position: relative;
-    
     margin-top: 50px;
     width: 100%;
     overflow: hidden;
     height: 400px;
 }
-.cod-slide{
-    position: absolute;
 
+.cod-slide {
+    position: absolute;
     display: grid;
     width: 300%;
     height: 400px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(3, 1fr);
-
     grid-auto-flow: column;
-
     animation: TeamSlider 15s infinite;
 }
-.cod-user{
+
+.cod-user {
     display: flex;
 }
-.cod-user ul{
+
+.cod-user ul {
     padding-left: 20px;
     text-align: left;
 }
-.cod-user ul li:nth-child(1){
+
+.cod-user ul li:nth-child(1) {
     font-weight: 600;
 }
+
 .codellege-program {
     display: flex;
     justify-content: center;
     padding: 150px 0;
 }
-.cod-program-icon{
 
+.cod-program-icon {
     background-image: url(Imagenes/SaturnBook.jpeg);
     background-repeat: no-repeat;
     background-size: 110%;
     background-position: center;
-    
     transform: translateY(50%);
     border-radius: 50%;
     display: block;
     height: 160px;
     width: 160px;
 }
-.codellege-program .cod-col-6:nth-child(1){
+
+.codellege-program .cod-col-6:nth-child(1) {
     justify-content: flex-end;
 }
-.codellege-program .cod-col-6:nth-child(2){
+
+.codellege-program .cod-col-6:nth-child(2) {
     justify-content: flex-start;
 }
-.codellege-program .cod-col-6:nth-child(2) .cod-program-icon{
+
+.codellege-program .cod-col-6:nth-child(2) .cod-program-icon {
     background-image: url(Imagenes/PersonCodellege.jpeg);
 }
-.cod-card{
-    width: 400px;
 
+.cod-card {
+    width: 400px;
     margin: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.card-info{
+
+.card-info {
     padding: 50px;
     background: #7f8081;
     color: white;
     height: 290px;
 }
-.card-info p{
+
+.card-info p {
     margin: 0;
     padding: 10px;
 }
-.card-info h4{
-  margin: 0;
-  padding: 0;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  font-size: 40px;
-  font-weight: normal;
+
+.card-info h4 {
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: normal;
 }
-.cod-card a{
+
+.cod-card a {
     height: 56px;
     width: 100%;
     line-height: 56px;
-    
     background: #ffffff;
     box-shadow: 0 0 20px 0 #0000002c;
+}
+
+#equipo {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20% 10%;
+}
+
+#equipo h2 {
+    text-align: center;
 }
 
 #aliados {
@@ -691,7 +701,11 @@ nav ul li a{
     text-align: center;
     font-size: 25px;
     position: absolute;
-    top: 12%;
+    box-sizing: border-box;
+    top: 20%;
+    color: white;
+    border-bottom: 1px solid white;
+    padding-bottom: 10%;
 }
 
 .contenido .inclucion p {
@@ -738,7 +752,10 @@ nav ul li a{
     text-align: center;
     font-size: 25px;
     position: absolute;
-    top: 12%;
+    top: 20%;
+    color: white;
+    border-bottom: 1px solid white;
+    padding-bottom: 10%;
 }
 
 .contenido .donacion p {
@@ -775,7 +792,10 @@ nav ul li a{
     text-align: center;
     font-size: 25px;
     position: absolute;
-    top: 12%;
+    top: 20%;
+    color: white;
+    border-bottom: 1px solid white;
+    padding-bottom: 10%;
 }
 
 .contenido .replica p {
@@ -802,7 +822,10 @@ nav ul li a{
     text-align: center;
     font-size: 25px;
     position: absolute;
-    top: 12%;
+    top: 20%;
+    color: white;
+    border-bottom: 1px solid white;
+    padding-bottom: 10%;
 }
 
 .contenido .mentoreo p {
@@ -821,180 +844,147 @@ nav ul li a{
     background: url(./Imagenes/colaborar_mentoreo.svg);
     background-size: 100% 100%;
 }
+
+
 /* Animations */
+
 @keyframes textAnimation {
     0% {
         content: ' ';
     }
-
     2.7% {
         content: 'C';
     }
-
     5.4% {
         content: 'Co';
     }
-
     8.1% {
         content: 'Cod';
     }
-
     10.8% {
         content: 'Code';
     }
-
     13.5% {
         content: 'Cod';
     }
-
     16.2% {
         content: 'Co ';
     }
-
     18.9% {
         content: 'C';
     }
-
     21.6% {
         content: ' ';
     }
-
     24.3% {
         content: 'L';
     }
-
     27% {
         content: 'Le';
     }
-
     29.7% {
         content: 'Lea';
     }
-
     32.4% {
         content: 'Lear';
     }
-
     35.1% {
         content: 'Learn';
     }
-
     37.8% {
         content: 'Lear';
     }
-
     40.5% {
         content: 'Lea';
     }
-
     43.2% {
         content: 'Le';
     }
-
     45.9% {
         content: 'L';
     }
-
     48.6% {
         content: '';
     }
-
     51.3% {
         content: 'T';
     }
-
     54% {
         content: 'Tr';
     }
-
     56.7% {
         content: 'Tra';
     }
-
     59.4% {
         content: 'Tran';
     }
-
     62.1% {
         content: 'Trans';
     }
-
     64.8% {
         content: 'Transc';
     }
-
     67.5% {
         content: 'Transce';
     }
-
     70.2% {
         content: 'Transcen';
     }
-
     72.9% {
         content: 'Transcend';
     }
-
     75.6% {
         content: 'Transcen';
     }
-
     78.3% {
         content: 'Transce';
     }
-
     81% {
         content: 'Transc';
     }
-
     83.7% {
         content: 'Trans';
     }
-
     86.4% {
         content: 'Tran';
     }
-
     89.1% {
         content: 'Tra';
     }
-
     92% {
         content: 'Tr';
     }
-
     94.5% {
         content: 'T';
     }
-
     98% {
         content: '';
     }
-
     100% {
         content: '';
     }
 }
-@keyframes TeamSlider{
-    0%{
+
+@keyframes TeamSlider {
+    0% {
         left: 0;
     }
-    30%{
+    30% {
         left: 0;
     }
-    35%{
+    35% {
         left: -100%;
     }
-    65%{
+    65% {
         left: -100%;
     }
-    70%{
+    70% {
         left: -200%;
     }
-    95%{
+    95% {
         left: -200%;
     }
-    100%{
+    100% {
         left: 0;
     }
 }
