@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="quasar-logo.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">s -->
     <title>Codellege</title>
@@ -20,12 +21,12 @@
         <ul>
             <li> <a href="#home">Home</a></li>
             <li> <a href="#about">Nosotros</a> </li>
-            <li> Programas</li>
-            <li>Aliados</li>
-            <li>Testimonios</li>
-            <li>Colaborar</li>
+            <li><a href="#programs">Programas</a> </li>
+            <li><a href="#allies">Aliados</a></li>
+            <li><a href="#testimonies">Testimonios</a></li>
+            <li><a href="#colaborate">Colaborar</a></li>
             <li>
-                <i class="material-icons">person</i>
+                <i class="material-icons" [href]="https://codellege.com/login">person</i>
             </li>
             <li>
                 <i class="material-icons">language</i>
@@ -36,9 +37,9 @@
     <!-- Header -->
     <a name="home"></a>
     <header class="cod-bg-blue">
+        <a name="about"></a>
         <h1>we/ <br>
             <span></span>
-            <a name="about"></a>
         </h1>
     </header>
     <!-- Nosotros -->
@@ -47,7 +48,9 @@
             <!-- Section Codellege -->
             <h2>¿Qué es Codellege?</h2>
             <p>
-                Nosotros enseñamos a jóvenes a programar para lograr la inclusión laboral y promover las Tecnologías de la Información. Nuestros esfuerzos van hacia jóvenes con talento, pero que, por situaciones externas, no han tenido la oportunidad de acceder a esta
+                Nosotros enseñamos a jóvenes a programar para lograr la inclusión laboral y promover las Tecnologías de
+                la Información. Nuestros esfuerzos van hacia jóvenes con talento, pero que, por situaciones externas, no
+                han tenido la oportunidad de acceder a esta
                 educación.
             </p>
             <!-- Subsection Nodes -->
@@ -59,7 +62,8 @@
                         <h3>Propósito</h3>
                     </div>
                     <div class="cod-node-text">
-                        <p>Lograr la inclusión de <br> jóvenes en la industria <br> de TI y promover el <br> conocimiento de tecnología.
+                        <p>Lograr la inclusión de <br> jóvenes en la industria <br> de TI y promover el <br>
+                            conocimiento de tecnología.
                         </p>
                     </div>
                 </div>
@@ -279,6 +283,7 @@
         </div>
     </section>
     <!-- Nuestros Programas -->
+    <a name="programs"></a>
     <section class="codellege-program">
         <div class="cod-container">
             <h2>Nuestros Programas</h2>
@@ -289,7 +294,8 @@
                         <div class="card-info">
                             <h4>UP</h4>
                             <hr>
-                            <p>Para aquellos que buscan <br> dar el paso a incluirse <br> laboralmente. <br> Programa intensivo.</p>
+                            <p>Para aquellos que buscan <br> dar el paso a incluirse <br> laboralmente. <br> Programa
+                                intensivo.</p>
                             <p>25 horas/semana por 5 meses.</p>
                         </div>
                         <a>más información</a>
@@ -301,7 +307,8 @@
                         <div class="card-info">
                             <h4>START</h4>
                             <hr>
-                            <p>Para aquellos que solo <br> quieren apredner o mejorar <br> en programacion. <br> Programa nomal.</p>
+                            <p>Para aquellos que solo <br> quieren apredner o mejorar <br> en programacion. <br>
+                                Programa nomal.</p>
                             <p>9 horas/semana por 3 meses.</p>
                         </div>
                         <a>más información</a>
@@ -312,6 +319,7 @@
         </div>
 
     </section>
+    <a name="allies"></a>
     <section id="aliados">
         <div class="txtAliados">
             <h1>NUESTROS ALIADOS</h1>
@@ -354,8 +362,60 @@
                 </div>
             </div>
         </div>
+        <a name="testimonies"></a>
     </section>
-    <section id="testimonios"></section>
+    <section class="codellege-test">
+        <h2> Testimonios </h2>
+        <div class="cod-slider-wrapper-test">
+            <div class="cod-slide-test">
+                <!-- Primera Pagina -->
+                <div class="cod-test">
+                    <i class="cod-testimoni"></i>
+                    <ul>
+                            <li> Tere </li>
+                        <p>
+                            Codellege ha sido la mejor y más grande oportunidad que <br>
+                            he tenido. Me apasiona la tecnología, y Codellege fue como <br>
+                            el impulso para tener mejores oportunidades en el ámbito <br>
+                            laboral y personal.
+                        </p>
+                    </ul>
+                </div>
+                <!-- Segunda Pagina -->
+                <div class="cod-test">
+                    <i class="cod-testimoni"></i>
+                    <ul>
+                        <li> Leopoldo </li>
+                        <p>Gracias a Codellege tengo lo necesario para establecerme <br>
+                             en mejores trabajos o realizar proyectos más ambiciosos.</p>
+                    </ul>
+                </div>
+                <!-- Tercera Pagina -->
+                <div class="cod-test">
+                    <i class="cod-testimoni"></i>
+                    <ul>
+                        <li> Andrea </li>
+                        <p> Es una de las mejores experiencias. Te llevas conocimiento <br>
+                             importantísimo y si lo aprovechas y lo disfrutas puedes <br>
+                              tener oportunidades grandes en tu vida.</p>
+                    </ul>
+                </div>
+                <!-- Cuarta Pagina -->
+                <div class="cod-test">
+                    <i class="cod-testimoni"></i>
+                    <ul>
+                        <li> Samuel Casanova</li>
+                        <p>Aparte de que aprendes y conoces a nuevas personas, <br>
+                            tienes otro punto de vista acerca de lo que realmente <br>
+                            deseas hacer con tu vida
+                        </p>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <a name="colaborate"></a>
+    </section>
     <section id="colaborar">
         <div class="txtColaborar">
             <h1>COLABORA</h1>
@@ -384,18 +444,19 @@
             </div>
         </div>
     </section>
+    <!-- Footer -->
     <footer>
-            <i class="fa fa-facebook" aria-hidden="true"></i>
-            <img src="./Imagenes/codellege-logo-green.svg" alt="">
-    
-            <div class="footerCont">
-                <b>¿Tienes dudas?</b>
-                <span>Escribenos a</span>
-                <div class="footerBtn">
-                    info@codellege.com
-                </div>
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <img src="./Imagenes/codellege-logo-green.svg" alt="">
+
+        <div class="footerCont">
+            <b>¿Tienes dudas?</b>
+            <span>Escribenos a</span>
+            <div class="footerBtn">
+                info@codellege.com
             </div>
-        </footer>
+        </div>
+    </footer>
 </body>
 
 </html>

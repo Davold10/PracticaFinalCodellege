@@ -338,7 +338,7 @@ nav ul li a {
 .cod-user ul li:nth-child(1) {
     font-weight: 600;
 }
-
+/* Programs Rules */
 .codellege-program {
     display: flex;
     justify-content: center;
@@ -844,6 +844,64 @@ nav ul li a {
     background: url(./Imagenes/colaborar_mentoreo.svg);
     background-size: 100% 100%;
 }
+/* TestimoniosSlider */
+.codellege-test{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10% 10%;
+}
+.codellege-test h2{
+    text-align: center;
+    width: 100%;
+}
+.cod-slider-wrapper-test {
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 50px;
+    width: 100%;
+    overflow: hidden;
+    height: 400px;
+}
+
+.cod-slide-test {
+    position: absolute;
+    display: grid;
+    width: 400%;
+    height: 400px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100%;
+    animation: TestSlider 15s infinite;
+}
+.cod-testimoni{
+        display: block;
+        background: url(Imagenes/circle-person-thinking.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+}
+.cod-test {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cod-test ul {
+    padding-top: 5%;
+    padding-left: 20px;
+    font-size: 150%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.cod-test ul li:nth-child(1) {
+    font-weight: 600;
+}
 /* Footer */
 footer {
     width: 100%;
@@ -1044,6 +1102,35 @@ footer .footerCont {
     }
     95% {
         left: -200%;
+    }
+    100% {
+        left: 0;
+    }
+}
+@keyframes TestSlider {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
     }
     100% {
         left: 0;
