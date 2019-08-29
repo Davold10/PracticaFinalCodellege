@@ -41,7 +41,7 @@
         margin-left: 2%;
     }
     
-    .navbar ul il {
+    .navbar ul li {
         list-style: none;
         position: relative;
         color: white;
@@ -635,4 +635,229 @@
         color: rgb(32, 81, 245);
         background: white;
         text-align: center;
+    }
+    
+    @media only screen and (max-width: 380px) {
+        .navbar {
+            flex-direction: column;
+            left: 0;
+        }
+        .navbar ul {
+            display: flex;
+            justify-content: center;
+        }
+        .navbar ul>a {
+            margin-left: 3;
+        }
+        .navbar ul li {
+            font-size: 10px;
+        }
+        .navbar img {
+            width: 100px;
+            height: 50px;
+        }
+        #home .programa {
+            font-size: 1.8em;
+            top: 70%;
+            left: 4%;
+        }
+        #home .UP {
+            font-size: 2em;
+            top: 72%;
+            left: 4%;
+        }
+        #home {
+            justify-content: left;
+        }
+        #informacion {
+            display: inline;
+        }
+        .caja1 {
+            display: inline;
+        }
+        .caja1 .cajaIzq {
+            display: inline;
+        }
+        .caja1 .cajaDer {
+            display: inline;
+        }
+        .infGral {
+            display: inline;
+        }
+        .cajaDer .mes {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            position: relative;
+            display: flex;
+            top: 20%;
+            left: 7%;
+        }
+        .cajaDer .mes .num {
+            position: absolute;
+            top: 25%;
+            left: 30%;
+            font-size: 35px;
+        }
+        .cajaDer .mes .semanas {
+            position: absolute;
+            top: 62%;
+            left: 24%;
+            font-size: 11px;
+        }
+        .cajaDer .mes .duracion {
+            position: absolute;
+            top: 75%;
+            left: 25%;
+            font-size: 9px;
+        }
+        .cajaDer .horas {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            position: absolute;
+            position: relative;
+            top: 0%;
+            left: 30%;
+        }
+        .cajaDer .horas .tiempo {
+            position: absolute;
+            top: 25%;
+            left: 40%;
+            font-size: 50px;
+        }
+        .cajaDer .horas .hrs {
+            position: absolute;
+            top: 68%;
+            left: 28%;
+            font-size: 13px;
+        }
+        .cajaDer .horas .dia {
+            position: absolute;
+            top: 79%;
+            left: 42%;
+            font-size: 13px;
+        }
+        .cajaDer .ciudades {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            position: absolute;
+            position: relative;
+            top: 0%;
+            left: 50%;
+        }
+        .cajaDer .ciudades ul {
+            position: absolute;
+            left: -15%;
+        }
+        #temas,
+        #lugares {
+            display: inline;
+        }
+        #temas .slider {
+            padding: 0%;
+            width: 100vw;
+            flex-direction: row;
+        }
+        .proceso p {
+            display: inline;
+        }
+        .proceso {
+            display: inline;
+        }
+        #datos * {
+            display: inline;
+            font-size: 10px;
+        }
+        .nombre #txtNombre {
+            font-size: 10px;
+            height: 5vh;
+        }
+        .email #txtEmail {
+            font-size: 10px;
+            height: auto;
+            width: 55%;
+        }
+        #datos .email {
+            margin-left: 5%;
+        }
+        .pass #txtPass {
+            width: 60%;
+            height: auto;
+            font-size: 10px;
+        }
+        #datos .clase {
+            margin: 0%;
+            display: felx;
+        }
+        .clase #selClase {
+            font-size: 10px;
+            width: 40%;
+            height: auto;
+        }
+        #datos .localidad {
+            margin-left: 18%;
+            width: 62%;
+        }
+        .localidad #selLocal {
+            font-size: 10px;
+            width: 40%;
+            height: auto;
+        }
+        #datos .robot {
+            width: 50%;
+            height: 10vh;
+        }
+        #lugares iframe {
+            width: 350px;
+        }
+        #lugares * {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        #lugares .monterrey {
+            width: 100%;
+        }
+        #lugares .aguascalientes {
+            width: 100%;
+        }
+        #lugares .guadalajara {
+            width: 100%;
+        }
+        footer .fa {
+            font-size: 15px;
+        }
+        footer img {
+            width: 100px;
+            height: 50px;
+        }
+        footer .footerCont {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+        .footerCont b {
+            position: absolute;
+            top: 41%;
+            left: 29%;
+            font-size: 25px;
+            text-align: center;
+        }
+        .footerCont span {
+            top: 46%;
+            left: 34%;
+            font-size: 25px;
+        }
+        .footerCont .footerBtn {
+            width: 52%;
+            height: 5vh;
+            top: 57%;
+            left: 27%;
+            font-size: 9px;
+            border-top-left-radius: 60%;
+            border-bottom-right-radius: 60%;
+        }
     }
